@@ -503,3 +503,6 @@ h2{font-size:clamp(26px,3vw,38px);font-weight:800}
 .blik.err input{border-color:#c4002b;background:#fff7f8}
 
 @media (min-width:2200px){:root{--wrap:1560px}body{font-size:17px}}
+.dr-row{gap:14px}
+.dr-row b,.dr-row span:last-child{white-space:nowrap}
+.dr-row span:first-child{white-space:normal}
