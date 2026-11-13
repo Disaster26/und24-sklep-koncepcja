@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="pl"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Zamówienie | UND24</title>
+<meta name="description" content="Składanie zamówienia - wersja demonstracyjna.">
+<meta name="robots" content="noindex,nofollow">
+<meta name="theme-color" content="#ffffff">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..900&amp;display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/style.css?v=1">
+</head>
+<body data-page="zamowienie">
+<div id="hdr"></div>
+
+<div class="demo-bar"><div class="wrap">Wersja demonstracyjna: płatność nie zostanie pobrana, zamówienie nie trafi do sklepu.</div></div>
+<main class="wrap">
+  <div class="page-h"><h1>Zamówienie</h1><div class="steps"><span>1. Koszyk</span><i></i><b>2. Dane, dostawa i płatność</b><i></i><span>3. Potwierdzenie</span></div></div>
+  <div class="cart-l" id="co-wrap">
+    <form class="co" id="co" novalidate>
+      <fieldset><legend>Twoje dane</legend>
+        <p style="margin:0 0 14px;color:var(--ink2)">Zamawiasz bez zakładania konta. Masz konto? <a href="konto.html" style="font-weight:700">Zaloguj się</a></p>
+        <div class="fg">
+          <div class="fld full"><label for="email">E-mail</label><input id="email" type="email" autocomplete="email" inputmode="email"><span class="e">Podaj poprawny adres e-mail, wyślemy na niego potwierdzenie.</span></div>
+          <div class="fld"><label for="imie">Imię i nazwisko</label><input id="imie" autocomplete="name"><span class="e">Podaj imię i nazwisko.</span></div>
+          <div class="fld"><label for="tel">Telefon</label><input id="tel" type="tel" autocomplete="tel" inputmode="tel"><span class="e">Telefon jest potrzebny przewoźnikowi.</span></div>
+          <div class="fld full"><label for="ulica">Ulica i numer</label><input id="ulica" autocomplete="street-address"><span class="e">Podaj adres dostawy.</span></div>
+          <div class="fld"><label for="kod">Kod pocztowy</label><input id="kod" autocomplete="postal-code" inputmode="numeric" placeholder="00-000"><span class="e">Kod w formacie 00-000.</span></div>
+          <div class="fld"><label for="miasto">Miejscowość</label><input id="miasto" autocomplete="address-level2"><span class="e">Podaj miejscowość.</span></div>
+        </div>
+        <label class="chk"><input type="checkbox" id="firma"> Chcę fakturę na firmę</label>
+        <div class="fg" id="firma-f" hidden style="margin-top:12px">
+          <div class="fld"><label for="nip">NIP</label><input id="nip" inputmode="numeric"><span class="e">NIP ma 10 cyfr.</span></div>
+          <div class="fld"><label for="fnazwa">Nazwa firmy</label><input id="fnazwa"><span class="e">Podaj nazwę firmy.</span></div>
+        </div>
+      </fieldset>
+      <fieldset><legend>Dostawa</legend><div class="opts" id="ship"></div><p style="margin:12px 0 0;font-size:14px;color:var(--mute)">Przy Paczkomacie adres powyżej nie jest wymagany. Wysyłka za granicę: List Global Express lub kurier DPD.</p></fieldset>
+      <fieldset><legend>Płatność</legend><div class="opts" id="pay"></div></fieldset>
+      <fieldset><legend>Zgody</legend>
+        <div class="fld"><label for="uwagi">Uwagi do zamówienia (opcjonalnie)</label><textarea id="uwagi"></textarea></div>
+        <label class="chk"><input type="checkbox" id="regulamin"> Akceptuję <a href="informacje.html#regulamin">regulamin sklepu</a> i zapoznałem się z polityką prywatności.</label>
+        <label class="chk"><input type="checkbox"> Chcę dostawać informacje o nowościach (opcjonalnie).</label>
+      </fieldset>
+      <div class="co-err" id="co-err" role="alert"></div>
+    </form>
+    <aside class="sum" id="co-sum"></aside>
+  </div>
+</main>
+<div id="ftr"></div>
+<script src="assets/app.js?v=1"></script>
+</body></html>
